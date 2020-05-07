@@ -18,7 +18,7 @@ namespace PdfToText
                     DisplayUsage();
                     return;
                 }
-
+LeadingCommas=False;LeadingJoins=True;RemoveComments=False
                 string file = args[0];
                 if (!File.Exists(file))
                 {
