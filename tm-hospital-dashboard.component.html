@@ -1,0 +1,103 @@
+<div class="pagetitle">
+    <nav>
+        <ol class="breadcrumb">
+            <li class="breadcrumb-item">Home</li>
+            <li class="breadcrumb-item active">Dashboard</li>
+        </ol>
+    </nav>
+</div>
+
+<div class="row">
+    
+    <div class="col-6">
+        <div class="card ">
+            <div class="card-header bg-info bg-gradient">
+                Equipments
+            </div>
+            <div class="card-body">
+                <h6>Total count: {{equimentcount}}</h6>
+                <apx-chart #visitorchart [series]="ActiveChartOptions.series" [chart]="ActiveChartOptions.chart"
+                    [labels]="ActiveChartOptions.labels" [responsive]="ActiveChartOptions.responsive"
+                    [tooltip]="ActiveChartOptions.tooltip" [legend]="ActiveChartOptions.legend"
+                    [colors]="ActiveChartOptions.colors" [dataLabels]="ActiveChartOptions.dataLabels"
+                    [plotOptions]="ActiveChartOptions.plotOptions" [stroke]="ActiveChartOptions.stroke">
+                </apx-chart>
+            </div>
+        </div>
+    </div>
+
+    <div class="col-6">
+        <div class="card " style="height: 355px;">
+            <div class="card-header bg-info bg-gradient">Functional Status </div>
+            <div class="card-body">
+                <apx-chart [series]="FuncationStatusChartOptions.series" [chart]="FuncationStatusChartOptions.chart"
+                    [dataLabels]="FuncationStatusChartOptions.dataLabels"
+                    [plotOptions]="FuncationStatusChartOptions.plotOptions" [yaxis]="FuncationStatusChartOptions.yaxis"
+                    [legend]="FuncationStatusChartOptions.legend" [fill]="FuncationStatusChartOptions.fill"
+                    [stroke]="FuncationStatusChartOptions.stroke" [tooltip]="FuncationStatusChartOptions.tooltip"
+                    [xaxis]="FuncationStatusChartOptions.xaxis" [grid]="FuncationStatusChartOptions.grid">
+                </apx-chart>
+            </div>
+        </div>
+    </div>
+</div>
+
+<div class="row">
+    <div class="col-4">
+        <div class="card ">
+            <div class="card-header bg-info bg-gradient">
+                Approved Status
+
+            </div>
+            <div class="card-body">
+                <apx-chart #approvedchart [series]="ApprovedChartOptions.series" [chart]="ApprovedChartOptions.chart"
+                    [labels]="ApprovedChartOptions.labels" [responsive]="ApprovedChartOptions.responsive"
+                    [tooltip]="ApprovedChartOptions.tooltip" [legend]="ApprovedChartOptions.legend"
+                    [colors]="ApprovedChartOptions.colors" [dataLabels]="ApprovedChartOptions.dataLabels"
+                    [plotOptions]="ApprovedChartOptions.plotOptions" [stroke]="ApprovedChartOptions.stroke">
+                </apx-chart>
+            </div>
+        </div>
+
+    </div>
+    <div class="col-4">
+        <div class="card " style="height: 275px;">
+            <div class="card-header bg-info bg-gradient">
+                Criticality Status
+
+            </div>
+            <div class="card-body">
+                <apx-chart style="height: 200px;" #criticalitychart [series]="CriticalityChartOptions.series"
+                    [chart]="CriticalityChartOptions.chart" [labels]="CriticalityChartOptions.labels"
+                    [responsive]="CriticalityChartOptions.responsive" [tooltip]="CriticalityChartOptions.tooltip"
+                    [legend]="CriticalityChartOptions.legend" [colors]="CriticalityChartOptions.colors"
+                    [dataLabels]="CriticalityChartOptions.dataLabels"
+                    [plotOptions]="CriticalityChartOptions.plotOptions" [stroke]="CriticalityChartOptions.stroke">
+                </apx-chart>
+            </div>
+        </div>
+
+    </div>
+    <div class="col-4">
+        <div class="card ">
+            <div class="card-header bg-info bg-gradient">
+                Warranty Status
+
+            </div>
+            <div class="card-body" style="height: 230px;">
+                <apx-chart #warrantychart [series]="WarrantyChartOptions.series" [chart]="WarrantyChartOptions.chart"
+                    [labels]="WarrantyChartOptions.labels" [responsive]="WarrantyChartOptions.responsive"
+                    [tooltip]="WarrantyChartOptions.tooltip" [legend]="WarrantyChartOptions.legend"
+                    [colors]="WarrantyChartOptions.colors" [dataLabels]="WarrantyChartOptions.dataLabels"
+                    [plotOptions]="WarrantyChartOptions.plotOptions" [stroke]="WarrantyChartOptions.stroke">
+                </apx-chart>
+            </div>
+        </div>
+
+    </div>
+
+
+
+
+
+</div>
