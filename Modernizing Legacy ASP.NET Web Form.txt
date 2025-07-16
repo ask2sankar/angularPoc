@@ -1,0 +1,36 @@
+Modernizing Legacy ASP.NET Web Forms Applications Using the DotVVM Framework
+Abstract
+Legacy ASP.NET Web Forms applications are difficult to maintain, scale, and integrate with modern front-end technologies. This paper presents a structured approach to modernizing such applications using the DotVVM framework — a .NET-based MVVM framework designed to simplify the migration of Web Forms. It highlights architectural differences, migration strategies, tool support, code transformation patterns, and real-world challenges, helping enterprises unlock modern web development with minimal disruption.
+
+ Introduction
+The evolution of web application architecture from Web Forms (event-driven) to SPA/MVVM models.
+
+Challenges of maintaining legacy Web Forms apps (tight coupling, poor testability, limited front-end flexibility).
+
+Introduction to DotVVM: open-source MVVM framework for web apps in .NET, supporting both server-side and client-side rendering.
+
+Objective: Demonstrate how DotVVM provides a migration bridge to modern development practices without rewriting the entire application.
+
+2. Why Modernize ASP.NET Web Forms?
+
+Problem in Web Forms	How DotVVM Helps
+View tightly coupled with code-behind	Clean MVVM separation
+Full postbacks on every interaction	Partial updates & MVVM bindings
+Hard to integrate with JavaScript frameworks	Supports JS interop, SPA features
+State management complexity	Built-in state binding
+Legacy controls like GridView, UpdatePanel	DotVVM provides equivalents or wrappers
+Poor support for mobile	Responsive, Bootstrap-compatible UI controls
+
+
+
+
+n today’s fast-paced digital world, enterprises are under increasing pressure to modernize their legacy software systems to stay competitive, maintain scalability, and improve developer productivity. One such legacy technology is ASP.NET Web Forms, which, although once revolutionary, has become outdated due to its tightly coupled architecture, lack of modularity, and limited support for modern web development practices such as Single Page Applications (SPAs), responsive design, and client-side frameworks.
+
+This paper presents DotVVM, a modern, open-source, MVVM-based framework designed specifically for the .NET ecosystem, as a powerful and practical solution for modernizing legacy ASP.NET Web Forms applications. DotVVM allows developers to incrementally migrate Web Forms projects without a complete rewrite, reusing existing .NET business logic while embracing modern web UI patterns.
+
+The paper explores the architectural differences between Web Forms and DotVVM, demonstrating how DotVVM’s MVVM model decouples UI from logic, enhances testability, and supports clean state management and reactive UIs. A step-by-step migration strategy is proposed — including code-behind refactoring, control mapping (e.g., GridView, DropDownList, UpdatePanel), state/session handling, and ViewModel creation — supported by real-world code transformation examples.
+
+Additionally, this paper evaluates how DotVVM can coexist with existing Web Forms code during a phased migration, offering organizations a low-risk pathway to modernization. Challenges such as handling third-party components, event-handler conversion, and UI logic separation are addressed with mitigation techniques.
+
+Ultimately, the paper highlights how DotVVM helps bridge the gap between legacy and modern systems, delivering benefits such as improved performance, maintainability, testability, and future-proof architecture. It is an ideal roadmap for developers, architects, and organizations looking to revamp their ASP.NET Web Forms applications with minimal disruption and maximum ROI.
+
